@@ -60,3 +60,28 @@ h2::after{content:"";display:block;width:46px;height:3px;background:var(--red);m
 #lb.on{display:flex}
 #lb img{max-width:100%;max-height:100%;object-fit:contain}
 #lbx{position:absolute;top:calc(10px + env(safe-area-inset-top,0px));right:14px;background:none;border:0;color:#fff;font-size:2.2rem;line-height:1;cursor:pointer;padding:6px 12px}
+
+/* ---- Agent landing page (repo home + 404). Additive: listing pages don't use these classes. ---- */
+.lp-top{background:#393a40;color:#fff;padding:22px 0}
+.lp-top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.lp-top img{width:150px;height:auto}
+.lp-top a{color:#fff;text-decoration:none;font-weight:700;font-size:.95rem}
+.lp-ended{background:var(--red);color:#fff;padding:14px 0;font-weight:600;font-size:.95rem}
+.lp-hero{padding:46px 0 34px;border-bottom:1px solid var(--line);margin-bottom:38px}
+.lp-hero .kick{text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;font-weight:700;color:var(--red);margin:0 0 12px}
+.lp-hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:clamp(2.1rem,6.5vw,3.2rem);line-height:1.08;margin:0}
+.lp-hero .sub{font-size:1.1rem;color:var(--ink-2);margin:18px 0 0;max-width:52ch}
+.lp-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin:30px 0 0}
+.lp-proof div{background:var(--panel);padding:18px 8px;text-align:center}
+.lp-proof b{display:block;font-size:1.45rem;line-height:1.1}
+.lp-proof span{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-2);margin-top:5px}
+.lp-paths{display:grid;gap:16px;margin-top:24px}
+@media(min-width:680px){.lp-paths{grid-template-columns:1fr 1fr;gap:20px}}
+.lp-card{border:1px solid var(--line);border-top:4px solid var(--red);padding:24px 22px;background:var(--bg)}
+.lp-card h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.6rem;font-weight:600;margin:0 0 10px;line-height:1.15}
+.lp-card p{margin:0 0 18px;color:var(--ink-2);font-size:.97rem}
+.lp-card .btns{display:flex;gap:8px;flex-wrap:wrap}
+.lp-card .btns a{flex:1 1 auto;text-align:center;text-decoration:none;font-weight:700;padding:13px 14px;border-radius:2px;font-size:.95rem}
+.lp-card .b1{background:var(--red);color:#fff}
+.lp-card .b2{border:1px solid var(--line);color:var(--ink)}
+.lp-towns{color:var(--ink-2);margin:14px 0 0}
