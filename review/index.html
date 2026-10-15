@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Share your experience working with Fred Moore III of Keller Williams Legacy Partners.">
+  <meta name="robots" content="noindex">
+  <title>Share your experience | Fred Moore III</title>
+  <style>
+    :root { --paper:#f7f5f0; --ink:#242725; --muted:#61655f; --line:#d8dbd2; --red:#ac2028; --soft:#e9ede4; }
+    * { box-sizing:border-box; }
+    html { font-family:Arial,Helvetica,sans-serif; color:var(--ink); background:var(--paper); }
+    body { margin:0; }
+    a { color:inherit; }
+    a:focus-visible { outline:3px solid #1d62a8; outline-offset:6px; }
+    .skip { position:absolute; left:18px; top:-100px; background:white; padding:14px; z-index:2; }
+    .skip:focus { top:16px; }
+    .shell { width:min(1120px,calc(100% - 80px)); margin:auto; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:32px 0; border-bottom:1px solid var(--line); }
+    .identity { display:flex; align-items:center; gap:14px; }
+    .monogram { width:44px; height:44px; display:grid; place-items:center; border:1px solid var(--ink); font:italic 25px Georgia,serif; border-radius:50%; }
+    .brand-name { font-size:17px; font-weight:700; letter-spacing:-.3px; }
+    .brand-office { margin-top:5px; color:var(--muted); font-size:12px; line-height:1.5; }
+    .header-note { text-transform:uppercase; letter-spacing:2px; font-size:10px; font-weight:700; color:var(--muted); }
+    main { display:grid; grid-template-columns:1.05fr 1fr; gap:80px; align-items:center; padding:80px 0 70px; }
+    .eyebrow { margin:0 0 24px; font-size:11px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; display:flex; align-items:center; gap:11px; }
+    .eyebrow::before { content:""; width:26px; height:2px; background:var(--red); }
+    h1 { font:normal clamp(48px,5.3vw,66px)/1.02 Georgia,'Times New Roman',serif; letter-spacing:-2.8px; margin:0 0 27px; }
+    h1 em { color:var(--red); font-weight:normal; }
+    .intro { max-width:420px; font-size:17px; line-height:1.7; color:var(--muted); margin:0; }
+    .signature { font:italic 29px Georgia,serif; margin:28px 0 0; }
+    .platforms { background:#fff; border:1px solid var(--line); border-radius:18px; padding:30px; box-shadow:0 16px 42px #24272506; }
+    h2 { margin:0 0 10px; font-size:20px; letter-spacing:-.5px; }
+    .platform-note { color:var(--muted); font-size:14px; line-height:1.6; margin:0 0 24px; }
+    .links { display:grid; gap:12px; }
+    .platform { display:flex; align-items:center; gap:16px; min-height:87px; padding:17px 18px; border:1px solid var(--line); border-radius:11px; text-decoration:none; transition:background .15s,border-color .15s; }
+    .platform:hover { background:var(--paper); border-color:#9da497; }
+    .icon { flex:0 0 37px; width:37px; height:37px; display:grid; place-items:center; border:1px solid var(--line); border-radius:9px; background:#fff; font-weight:bold; font-size:22px; }
+    .icon svg { width:23px; height:23px; }
+    .label { flex:1; min-width:0; }
+    .label strong { display:block; font-size:16px; margin-bottom:5px; }
+    .label span { display:block; font-size:12px; line-height:1.5; color:var(--muted); }
+    .arrow { flex:0 0 20px; font-size:22px; color:var(--red); }
+    .new-tab { font-size:11px; line-height:1.6; color:var(--muted); margin:21px 0 0; }
+    .welcome { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:24px 28px; border-radius:12px; background:var(--soft); }
+    .welcome p { margin:0; font-size:14px; line-height:1.7; }
+    .welcome strong { font-weight:700; }
+    .welcome span { color:var(--muted); }
+    .flower { width:42px; height:42px; flex:0 0 42px; color:#61715a; }
+    footer { border-top:1px solid var(--line); margin-top:60px; padding:28px 0 32px; }
+    .footer-row { display:flex; justify-content:space-between; gap:24px; align-items:flex-start; }
+    .footer-name { font-size:13px; font-weight:700; }
+    .footer-office { font-size:12px; color:var(--muted); margin-top:6px; line-height:1.5; }
+    .contact { display:flex; gap:24px; flex-wrap:wrap; font-size:13px; line-height:1.6; }
+    .contact a { text-decoration-color:#abb0a6; text-underline-offset:4px; }
+    .fine { margin:24px 0 0; font-size:10px; line-height:1.7; color:var(--muted); }
+    @media (prefers-reduced-motion:reduce) { * { transition:none!important; } }
+    @media (max-width:820px) {
+      .shell { width:min(560px,calc(100% - 40px)); }
+      header { padding:24px 0; }
+      .header-note { display:none; }
+      main { grid-template-columns:1fr; gap:34px; padding:44px 0 30px; }
+      h1 { font-size:52px; letter-spacing:-2.2px; margin-bottom:22px; }
+      .eyebrow { margin-bottom:22px; }
+      .intro { font-size:16px; }
+      .signature { margin-top:20px; font-size:26px; }
+      .platforms { padding:25px 22px; }
+      .welcome { padding:20px 22px; }
+      footer { margin-top:34px; }
+      .footer-row { flex-direction:column; gap:20px; }
+      .contact { gap:20px; }
+    }
+    @media (max-width:370px) {
+      .shell { width:calc(100% - 32px); }
+      h1 { font-size:45px; }
+      .brand-name { font-size:16px; }
+      .brand-office { font-size:11px; }
+      .platforms { padding:23px 18px; }
+      .platform { padding:16px 13px; gap:12px; }
+      .label span { font-size:11px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#review-options">Skip to review options</a>
+  <div class="shell">
+    <header aria-label="Fred Moore III">
+      <div class="identity">
+        <span class="monogram" aria-hidden="true">fm</span>
+        <div><div class="brand-name">Fred Moore III</div><div class="brand-office">Keller Williams Legacy Partners</div></div>
+      </div>
+      <span class="header-note">A note of thanks</span>
+    </header>
+    <main>
+      <section aria-labelledby="page-title">
+        <p class="eyebrow">Thank you for your trust</p>
+        <h1 id="page-title">Your experience.<br><em>In your words.</em></h1>
+        <p class="intro">Thank you for working with me. If you'd like to share your experience, I'd appreciate an honest review.</p>
+        <p class="signature">- Fred</p>
+      </section>
+      <section class="platforms" id="review-options" aria-labelledby="options-title">
+        <h2 id="options-title">Choose your platform</h2>
+        <p class="platform-note">All feedback is welcome. Choose whichever platform works for you.</p>
+        <nav class="links" aria-label="Review platforms">
+          <a class="platform" href="https://share.google/CrWXun45ZCvKOj4cJ" target="_blank" rel="noopener noreferrer" aria-describedby="link-note">
+            <span class="icon" aria-hidden="true">G</span>
+            <span class="label"><strong>Google</strong><span>Visit my Google profile</span></span><span class="arrow" aria-hidden="true">?</span>
+          </a>
+          <a class="platform" href="https://www.zillow.com/reviews/write/?s=X1-ZUxrv4n8e24z61_88dzc" target="_blank" rel="noopener noreferrer" aria-describedby="link-note">
+            <span class="icon" aria-hidden="true">Z</span>
+            <span class="label"><strong>Zillow</strong><span>Share a review on Zillow</span></span><span class="arrow" aria-hidden="true">?</span>
+          </a>
+          <a class="platform" href="https://www.facebook.com/BAMRGrp/reviews" target="_blank" rel="noopener noreferrer" aria-describedby="link-note">
+            <span class="icon" aria-hidden="true">f</span>
+            <span class="label"><strong>Facebook</strong><span>Share a recommendation</span></span><span class="arrow" aria-hidden="true">?</span>
+          </a>
+        </nav>
+        <p class="new-tab" id="link-note">Links open in a new tab. You may be asked to sign in.</p>
+      </section>
+    </main>
+    <aside class="welcome" aria-label="Thank you">
+      <p><strong>Honest is better than perfect.</strong><br><span>Thank you for taking the time to share your experience.</span></p>
+      <svg class="flower" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 5v38M5 24h38M11 11l26 26M11 37l26-26" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="24" r="10" fill="#e9ede4" stroke="currentColor" stroke-width="1.5"/></svg>
+    </aside>
+    <footer>
+      <div class="footer-row">
+        <div><div class="footer-name">Fred Moore III</div><div class="footer-office">Keller Williams Legacy Partners</div></div>
+        <div class="contact" aria-label="Contact Fred"><a href="tel:+12036261740">203.626.1740</a><a href="mailto:Fred@bamrg.com">Fred@bamrg.com</a></div>
+      </div>
+      <p class="fine">Each Keller Williams office is independently owned and operated.</p>
+    </footer>
+  </div>
+</body>
+</html>
