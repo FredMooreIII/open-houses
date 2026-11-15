@@ -1,11 +1,11 @@
-/* BAM open house pages — shared by every listing in this repo. Changes here affect ALL listings. */
+/* Open house pages — shared by every listing in this repo. Changes here affect ALL listings. */
 :root{--ink:#393a40;--ink-2:#55565e;--red:#e71e25;--bg:#ffffff;--panel:#f4f4f5;--line:#e3e3e6;--chip:#393a40;--chip-ink:#ffffff;
   box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#f2f2f3;--ink-2:#b4b5bb;--bg:#1c1d21;--panel:#26272c;--line:#3a3b41;--chip:#f2f2f3;--chip-ink:#1c1d21}}
 :root[data-theme="dark"]{--ink:#f2f2f3;--ink-2:#b4b5bb;--bg:#1c1d21;--panel:#26272c;--line:#3a3b41;--chip:#f2f2f3;--chip-ink:#1c1d21}
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;font-size:16px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Overpass,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;font-size:16px}
 img{max-width:100%;display:block}
 .wrap{max-width:960px;margin:0 auto;padding:0 20px}
 .hero{position:relative}
@@ -13,7 +13,7 @@ img{max-width:100%;display:block}
 .badge{position:absolute;top:0;left:0;background:var(--red);color:#fff;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.7rem;padding:10px 20px}
 .titlebar{background:#393a40;color:#fff;padding:26px 0 24px}
 .titlebar .wrap{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;justify-content:space-between}
-.oh{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2.2rem,7vw,3.4rem);line-height:1;margin:0;font-weight:600}
+.oh{font-family:Overpass,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:clamp(2.2rem,7vw,3.4rem);line-height:1;margin:0;font-weight:600}
 .addr{margin:6px 0 0;font-size:clamp(1rem,3.2vw,1.2rem);font-weight:500;color:#e6e6e8}
 .when{text-align:right;flex:1 1 auto;min-width:160px}
 .when .d{font-weight:700;font-size:1.05rem}
@@ -25,7 +25,7 @@ img{max-width:100%;display:block}
 .stat span{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-2);margin-top:3px}
 @media(min-width:680px){.stats{grid-template-columns:repeat(6,1fr)}}
 section{margin:0 0 40px}
-h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:clamp(1.6rem,4.5vw,2.1rem);margin:0 0 6px;line-height:1.15}
+h2{font-family:Overpass,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-weight:600;font-size:clamp(1.6rem,4.5vw,2.1rem);margin:0 0 6px;line-height:1.15}
 h2::after{content:"";display:block;width:46px;height:3px;background:var(--red);margin-top:10px}
 .lede{font-size:1.06rem;color:var(--ink-2);margin:18px 0 0}
 .feats{display:grid;gap:18px;margin-top:24px}
@@ -62,7 +62,7 @@ h2::after{content:"";display:block;width:46px;height:3px;background:var(--red);m
 #lbx{position:absolute;top:calc(10px + env(safe-area-inset-top,0px));right:14px;background:none;border:0;color:#fff;font-size:2.2rem;line-height:1;cursor:pointer;padding:6px 12px}
 
 /* ---- Agent landing page (repo home + 404). .lp namespace only; listing pages never use it. ---- */
-.lp{--w:1040px;--r:8px;--gap:clamp(40px,7vw,72px);font-family:"Inter Tight",Inter,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#fff;color:#393a40;line-height:1.55}
+.lp{--w:1040px;--r:8px;--gap:clamp(40px,7vw,72px);font-family:Overpass,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#fff;color:#393a40;line-height:1.55}
 .lp a{color:inherit}
 .lp section{margin:0}
 .lp h1,.lp h2,.lp h3{font-family:inherit;margin:0}
@@ -111,7 +111,7 @@ h2::after{content:"";display:block;width:46px;height:3px;background:var(--red);m
 .m-river{fill:none;stroke:rgba(255,255,255,.3);stroke-width:4;stroke-linecap:round;stroke-dasharray:1 8}
 .m-pin .dot{fill:#e71e25}
 .m-pin .hole{fill:#393a40}
-.m-lab{fill:#fff;font:600 14px "Inter Tight",Inter,sans-serif}
+.m-lab{fill:#fff;font:600 14px Overpass,sans-serif}
 
 /* contact */
 .lp-contact{background:#393a40;color:#fff;padding:var(--gap) 0 28px}
